@@ -1,0 +1,403 @@
+{
+ "schema": "a6-reference-plan-v1",
+ "status": "approved story v1; cast identity sheets and first frames not yet generated",
+ "ratio": "9:16",
+ "images": [
+  {
+   "id": "cast-tala",
+   "purpose": "character_reference",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "shop-body",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear. Both arms hang naturally; preserve two distinct legs and grounded feet.",
+    "world": "A plain deep-plum studio backdrop with one warm amber side light; no environment props.",
+    "composition": "An identity sheet showing separated front and three-quarter full-body views of Tala at consistent scale, clear gaps between views. Identity reference only, not a video opening frame.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "cast-oro",
+   "purpose": "character_reference",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "shop-body",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Oro, an elder: a greyed antelope-hide cloak over the shoulders, a woven grass shawl, a long gnarled wooden walking staff; posture slightly stooped and deliberate. Both arms hang naturally; preserve two distinct legs and grounded feet.",
+    "world": "A plain deep-plum studio backdrop with one warm amber side light; no environment props.",
+    "composition": "An identity sheet showing separated front and three-quarter full-body views of Oro at consistent scale, clear gaps between views. Identity reference only, not a video opening frame.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "cast-pip",
+   "purpose": "character_reference",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "shop-body",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Pip, a small child: a short tan hide tunic, holding a carved wooden bird toy in one hand. Both arms hang naturally; preserve two distinct legs and grounded feet.",
+    "world": "A plain deep-plum studio backdrop with one warm amber side light; no environment props.",
+    "composition": "An identity sheet showing separated front and three-quarter full-body views of Pip at consistent scale, clear gaps between views. Identity reference only, not a video opening frame.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "cast-viewer",
+   "purpose": "character_reference",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "shop-body",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "A modern young adult viewer: mustard-yellow bomber jacket over a white T-shirt, dark blue jeans, white sneakers, empty hands. Both arms hang naturally; preserve two distinct legs and grounded feet.",
+    "world": "A plain deep-plum studio backdrop with one warm amber side light; no environment props.",
+    "composition": "An identity sheet showing separated front and three-quarter full-body views of modern viewer at consistent scale, clear gaps between views. Identity reference only, not a video opening frame.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "cast-brak",
+   "purpose": "character_reference",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "shop-body",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Brak, a Neanderthal man: broader, heavier build and a wider head silhouette than the others, a thick dark-brown fur cape, a stone hand-axe tied at the belt. Both arms hang naturally; preserve two distinct legs and grounded feet.",
+    "world": "A plain deep-plum studio backdrop with one warm amber side light; no environment props.",
+    "composition": "An identity sheet showing separated front and three-quarter full-body views of Brak at consistent scale, clear gaps between views. Identity reference only, not a video opening frame.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-01",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "A modern young adult viewer: mustard-yellow bomber jacket over a white T-shirt, dark blue jeans, white sneakers, empty hands.",
+    "world": "An empty modern school gymnasium at dusk, polished wood floor with court lines, empty folding bleachers, amber light shafts through high windows.",
+    "composition": "Low centered view from the baseline; the viewer stands small at center court looking up at the empty bleachers; strong vertical negative space above. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-02",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "A modern young adult viewer: mustard-yellow bomber jacket over a white T-shirt, dark blue jeans, white sneakers, empty hands.",
+    "world": "The same gymnasium; every bleacher row packed with hundreds of tiny dark silhouettes in the same drawing grammar, softly amber-lit.",
+    "composition": "High wide angle from the top corner; the viewer at center court mid-turn, head tilted up toward the crowded rows. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-03",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear.",
+    "world": "A dark hillside path rising toward the top of the frame, lined with burning torches, rows of distant ancestral figures along it, night sky.",
+    "composition": "Lateral three-quarter view; Tala walking upward mid-stride in the lower third, spear held loosely; the path climbs vertically. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-04",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear.",
+    "world": "The same hillside path; the torches ahead are extinguished and the upper path falls into plum darkness.",
+    "composition": "Same camera as the climb; Tala stopped, spear raised defensively, facing the dark upper path; only the torches behind her still glow. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-05",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Oro, an elder: a greyed antelope-hide cloak over the shoulders, a woven grass shawl, a long gnarled wooden walking staff; posture slightly stooped and deliberate. A small band of about twelve ancestral people in plain brown and ochre hide wraps, same drawing grammar, seated, varied heights.",
+    "world": "A dry savanna camp at sunset: three small hide shelters, acacia silhouettes, one central fire.",
+    "composition": "Elevated wide view; the band seated around the fire in the middle third; Oro standing, one hand raised with a pointing finger as if counting heads. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-06",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Pip, a small child: a short tan hide tunic, holding a carved wooden bird toy in one hand. Oro, an elder: a greyed antelope-hide cloak over the shoulders, a woven grass shawl, a long gnarled wooden walking staff; posture slightly stooped and deliberate.",
+    "world": "The same camp in a cooler later season light, shelters weathered and patched.",
+    "composition": "Medium-wide; Pip standing in the foreground clutching the wooden bird, Oro seated behind by the fire; space above for the seasons to change. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-07",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear.",
+    "world": "A cracked dry riverbed under a hazy amber sky, dead reeds, blowing dust.",
+    "composition": "Low angle close to the ground; Tala kneeling, one black hand pressed flat on the cracked mud, spear lying beside her. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-08",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear.",
+    "world": "A thinning forest edge with sparse trees; a herd of antelope silhouettes running away toward the far horizon.",
+    "composition": "Over-the-shoulder from behind Tala, standing in the foreground lowering her spear, the herd small in the distance. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-09",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear. Oro, an elder: a greyed antelope-hide cloak over the shoulders, a woven grass shawl, a long gnarled wooden walking staff; posture slightly stooped and deliberate. Pip, a small child: a short tan hide tunic, holding a carved wooden bird toy in one hand.",
+    "world": "A riverbank at night in heavy rain; dark water rising toward the hide shelters.",
+    "composition": "Medium shot; Oro lifting Pip onto a high rock at frame top, Tala braced knee-deep in the water below, spear planted. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-10",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear. Oro, an elder: a greyed antelope-hide cloak over the shoulders, a woven grass shawl, a long gnarled wooden walking staff; posture slightly stooped and deliberate.",
+    "world": "Inside a hide shelter lit by a small fire; the band's shadows on the curved hide wall.",
+    "composition": "Close two-shot; Tala and Oro seated face to face, foreheads almost touching; warm glow between them, overlapping shadows behind. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-11",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Old Blue, a small all-black New Zealand black robin with a thin coloured band on one leg.",
+    "world": "A rocky windswept island coast in New Zealand, grey sea, lichen-covered rocks, a low amber sun through cloud.",
+    "composition": "Close low view of a rock in the lower half; Old Blue perched on it beside one other black robin; sea and sky above. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-12",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Old Blue, a small all-black New Zealand black robin with a thin coloured band on one leg.",
+    "world": "The same coast in warmer golden light; open sky above the rocks.",
+    "composition": "Wide vertical view; Old Blue lifting off from the rock with wings spread, several small black robins rising behind her toward the top of the frame. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-13",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear. Oro, an elder: a greyed antelope-hide cloak over the shoulders, a woven grass shawl, a long gnarled wooden walking staff; posture slightly stooped and deliberate. Pip, a small child: a short tan hide tunic, holding a carved wooden bird toy in one hand.",
+    "world": "A dawn ridge above a wide savanna; many small campfires dotting the plain below.",
+    "composition": "Behind-and-below view; the three cresting the ridge in silhouette with amber dawn rim light, the glowing plain revealed beneath them. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-14",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Brak, a Neanderthal man: broader, heavier build and a wider head silhouette than the others, a thick dark-brown fur cape, a stone hand-axe tied at the belt. Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear.",
+    "world": "A foggy cold forest clearing at dawn, tall pines, amber light beams cutting through mist.",
+    "composition": "Medium-wide; Brak stepping out of the fog on one side, a sapiens woman dressed like Tala in the foreground holding out a piece of food toward him. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-15",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "Brak, a Neanderthal man: broader, heavier build and a wider head silhouette than the others, a thick dark-brown fur cape, a stone hand-axe tied at the belt. Tala, a young ancestral woman: rust-ochre animal-hide wrap tied over one shoulder, a braided plant-fibre belt with a small bone toggle, bare black feet, holding a fire-hardened wooden spear. Pip, a small child: a short tan hide tunic, holding a carved wooden bird toy in one hand.",
+    "world": "The same clearing later; one shared fire, hide bedding, two families together.",
+    "composition": "Warm medium shot; Brak and the sapiens woman seated on either side of the fire, a small child between them, Pip nearby holding the wooden bird. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-16",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "A modern young adult viewer: mustard-yellow bomber jacket over a white T-shirt, dark blue jeans, white sneakers, empty hands.",
+    "world": "The modern gymnasium again; the bleachers half-filled with fading translucent silhouettes, most rows already empty.",
+    "composition": "Reverse high wide angle; the viewer alone at center court, small, looking up at the fading crowd. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  },
+  {
+   "id": "shot-17",
+   "purpose": "shot_first_frame",
+   "reference_inputs": [
+    {
+     "source": "package",
+     "asset_id": "apartment-style",
+     "role": "style"
+    }
+   ],
+   "image_prompt": {
+    "style": "Vertical 9:16 two-dimensional A6 Amber Noir illustration: compact matte-black round heads connected to the torso by short black necks, small cream-white eye marks and a compact cream line mouth, simplified black mitten-like hands and black limbs with a readable silhouette, angular illustrated contours and restrained cel shading. Warm amber illumination and amber rim light fall into deep plum shadows in a layered full-color setting. Not glossy 3D toys, not photoreal people.",
+    "cast": "A modern young adult viewer: mustard-yellow bomber jacket over a white T-shirt, dark blue jeans, white sneakers, empty hands.",
+    "world": "The empty modern gymnasium, soft amber dusk light from the high windows.",
+    "composition": "Vertical medium close-up; the viewer looking down at one raised open black hand, then toward the lens; head and hand in the upper-middle safe area. Keep the lower quarter free of key action for captions and the upper-left corner clear for the title.",
+    "constraints": "No text, letters, numbers, captions, logos or watermark. No speech bubbles. Two arms and two legs per person, grounded feet, no extra limbs, no floating heads, no realistic fingers. Do not copy the reference's red hoodie, apartment, cafe or shop."
+   }
+  }
+ ]
+}

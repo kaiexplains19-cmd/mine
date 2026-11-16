@@ -1,0 +1,128 @@
+# "What If You Were the Last Neanderthal?" v2: written to the Ifverse beat structure
+# (cold-open demo → reaction line → premise numbers → "So, what if…?" → "Here's how it works" → punchy montage
+#  → "But where it gets really crazy…" → fame → suspicion/test → "And there's a cost" → "Years later…" climax
+#  → moral choice → reaction/redemption → wise line → sequel hook → CTA)
+# who: N narrator · YOU you (Neanderthal) · GRAN · KID (your daughter) · AMA (sapiens woman) · MAN (sapiens hunter) · BOY (Ama's son) · ELDER (sapiens elder) · SCI
+# v: scene variant flags read by the 3D sets. sfx: ONLY concrete on-screen events.
+S = [
+ # ---- COLD OPEN: the "power" in action ----
+ dict(who='N', set='steppeHunt', cam='wide', v='charge', text="A woolly rhino charges your camp."),
+ dict(who='N', set='steppeHunt', cam='close', v='charge', text="Everyone runs. You don't."),
+ dict(who='N', set='steppeHunt', cam='med', v='chargeend', sfx=['thud'], text="You plant your spear, take the hit, and stay standing."),
+ dict(who='MAN', set='steppeHunt', cam='close', v='chargeend', text="How? How are you still alive?"),
+ # ---- PREMISE ----
+ dict(who='N', set='timeline', cam='wide', fact='300,000+ YEARS', text="Your people, the Neanderthals, survived the Ice Age in Europe for more than three hundred thousand years."),
+ dict(who='N', set='timeline', cam='push', text="Our species? About the same age, in total. And most of that time, we were nowhere near Europe."),
+ dict(who='N', set='hillsNight', cam='wide', v='fires2', text="But right now, about forty thousand years ago, something has changed. You might be the last one."),
+ dict(who='N', set='hillsNight', cam='push', v='fires2', text="So, what if you were the last Neanderthal?"),
+ # ---- HOW IT WORKS ----
+ dict(who='N', set='caveHome', cam='wide', text="Here's how it works."),
+ dict(who='N', set='caveHome', cam='close', fact='BUILT FOR COLD', text="Your body is short, wide and heavy. Built to hold heat."),
+ dict(who='N', set='caveHome', cam='med', fact='BRAIN ≥ OURS', text="Your brain is as big as ours. Sometimes bigger."),
+ dict(who='N', set='caveHome', cam='ots', text="You're not slow. You're not stupid. You're just built for a world that's ending."),
+ dict(who='GRAN', set='caveHome', cam='close', text="Eat. The cold doesn't wait."),
+ # ---- MONTAGE: punchy payoffs ----
+ dict(who='N', set='steppeHunt', cam='wide', v='hunt', text="Minus twenty outside?"),
+ dict(who='N', set='steppeHunt', cam='close', v='hunt', text="Fine."),
+ dict(who='N', set='steppeHunt', cam='med', v='hunt', sfx=['hooves'], text="A bison twice your weight?"),
+ dict(who='N', set='steppeHunt', cam='close', v='kill', sfx=['thud'], text="Dinner."),
+ dict(who='N', set='caveHome', cam='close', v='tar', text="Broken spear? You melt birch bark into glue and fix it. Your people invented that."),
+ dict(who='KID', set='caveHome', cam='close', v='tar', text="Can I try?"),
+ dict(who='YOU', set='caveHome', cam='close', v='tar', text="Not yet. It burns."),
+ # ---- THE SHRINKING ----
+ dict(who='N', set='hillsNight', cam='wide', v='fires12', text="Every winter, you climb the hill and count the fires."),
+ dict(who='N', set='hillsNight', cam='push', v='fires5', text="When your grandmother was young, there were twelve. Last year, five."),
+ dict(who='N', set='hillsNight', cam='top', v='fires2', text="This year? Two."),
+ dict(who='KID', set='hillsNight', cam='close', v='fires2', text="Where did everyone go?"),
+ dict(who='YOU', set='hillsNight', cam='close', v='fires2', text="Somewhere warmer."),
+ dict(who='N', set='hillsNight', cam='med', v='fires2', text="You don't know. Nobody does."),
+ # ---- "BUT WHERE IT GETS REALLY CRAZY" ----
+ dict(who='N', set='strangers', cam='wide', text="But where it gets really crazy is the strangers."),
+ dict(who='N', set='strangers', cam='push', text="Taller. Thinner. Faster talkers. And there are so many of them."),
+ dict(who='MAN', set='strangers', cam='close', text="There's someone on the ridge."),
+ dict(who='N', set='meeting', cam='wide', v='walk', sfx=['steps'], text="You walk into their camp alone. Spears rise."),
+ dict(who='N', set='meeting', cam='close', v='offer', text="Then a woman steps forward and holds out dried meat."),
+ dict(who='AMA', set='meeting', cam='close', v='offer', text="You're hungry. Take it."),
+ # ---- FAME ----
+ dict(who='N', set='sapiensCamp', cam='wide', text="Within a week, the whole camp is talking about you."),
+ dict(who='N', set='sapiensCamp', cam='med', v='lift', text="You carry a log four of them couldn't move."),
+ dict(who='BOY', set='sapiensCamp', cam='close', v='lift', text="Whoa. Do it again!"),
+ dict(who='N', set='sapiensCamp', cam='push', text="Kids follow you everywhere. They call you the Mountain."),
+ dict(who='N', set='sapiensCamp', cam='med', text="Their best hunter can throw a spear clean across a river."),
+ dict(who='MAN', set='sapiensCamp', cam='close', text="Your turn, Mountain."),
+ dict(who='N', set='steppeHunt', cam='close', v='hunt', text="You don't throw. You walk right up to the bison."),
+ dict(who='N', set='steppeHunt', cam='med', v='kill', sfx=['thud'], text="Up close. The way your people always did it."),
+ dict(who='BOY', set='sapiensCamp', cam='close', text="That was so cool!"),
+ dict(who='MAN', set='sapiensCamp', cam='close', text="That was insane."),
+ # ---- ESCALATION: the coldest winter ----
+ dict(who='N', set='hillsNight', cam='wide', v='fires2 snow', text="Then comes the coldest winter anyone can remember."),
+ dict(who='N', set='sapiensCamp', cam='med', v='cold', text="Their thin bodies shake. Two of their babies get sick."),
+ dict(who='ELDER', set='sapiensCamp', cam='close', v='cold', text="We won't last the moon."),
+ dict(who='N', set='sapiensCamp', cam='wide', v='cold', text="But you've done this your whole life."),
+ dict(who='N', set='caveHome', cam='med', text="You show them how to block the wind with hides and stones. How to keep the fire low and the embers alive all night."),
+ dict(who='N', set='caveHome', cam='close', text="How to sleep close, back to back, so nobody freezes."),
+ dict(who='YOU', set='caveHome', cam='close', text="Closer. The cold can't get between us."),
+ dict(who='N', set='sapiensCamp', cam='push', text="Every single one of them sees spring."),
+ dict(who='MAN', set='sapiensCamp', cam='close', text="The Mountain kept us alive."),
+ # ---- SUSPICION / TEST ----
+ dict(who='ELDER', set='sapiensCamp', cam='close', text="Nobody is that strong. He'll turn on us."),
+ dict(who='N', set='sapiensCamp', cam='med', text="So they test you. They leave you alone with their food, their tools, their children."),
+ dict(who='N', set='sapiensCamp', cam='close', text="You take nothing. You just fix their broken spears with your glue."),
+ dict(who='MAN', set='sapiensCamp', cam='close', text="He's not dangerous. He's just different."),
+ # ---- THE COST ----
+ dict(who='N', set='burial', cam='wide', text="And there's a cost."),
+ dict(who='N', set='burial', cam='med', text="Nobody here speaks your language. Nobody remembers what you remember."),
+ dict(who='N', set='sharedFire', cam='med', text="Their jokes make no sense to you. Your knees ache every winter."),
+ dict(who='N', set='sharedFire', cam='wide', text="And when they sing at night, you don't know any of the words."),
+ dict(who='AMA', set='sharedFire', cam='close', text="Sing with us."),
+ dict(who='YOU', set='sharedFire', cam='close', text="I don't know how."),
+ dict(who='N', set='burial', cam='close', text="That winter, your grandmother doesn't wake up. You bury her in the cave, curled up like she's sleeping."),
+ dict(who='KID', set='burial', cam='close', text="Is Grandma cold?"),
+ dict(who='YOU', set='burial', cam='close', text="No. Not anymore."),
+ dict(who='N', set='caveArt', cam='med', v='hand', text="Now it's just you and your daughter. You press your hand on the wall and blow red powder over it."),
+ dict(who='N', set='caveArt', cam='push', v='hand', text="One last handprint, so somebody knows you were here."),
+ # ---- YEARS LATER: CLIMAX ----
+ dict(who='N', set='sharedFire', cam='wide', text="Two years later, both families share one fire."),
+ dict(who='N', set='sharedFire', cam='med', text="Your daughter and Ama's son are inseparable."),
+ dict(who='N', set='caveHome', cam='med', v='tar', text="Ama teaches you their words. You teach her son how to make glue."),
+ dict(who='BOY', set='caveHome', cam='close', v='tar', text="Like this?"),
+ dict(who='YOU', set='caveHome', cam='close', v='tar', text="Slower. It burns."),
+ dict(who='N', set='sharedFire', cam='wide', v='lion', sfx=['growl'], text="Then, one night, something moves in the dark. A cave lion."),
+ dict(who='MAN', set='sharedFire', cam='close', v='lion', text="Everyone behind the fire!"),
+ dict(who='N', set='sharedFire', cam='push', v='lion', text="But the boy is outside the circle. And the lion has seen him."),
+ dict(who='N', set='sharedFire', cam='close', v='lion', text="You're the only one close enough. The only one strong enough."),
+ dict(who='N', set='sharedFire', cam='med', v='lion', text="And if you die tonight, your people die with you."),
+ dict(who='N', set='sharedFire', cam='close', v='lion', text="Your people…"),
+ dict(who='N', set='sharedFire', cam='close', v='lion', text="or the boy?"),
+ dict(who='N', set='sharedFire', cam='wide', v='fight', sfx=['roar', 'thud'], text="You don't even think. You jump."),
+ # ---- AFTERMATH / REDEMPTION ----
+ dict(who='N', set='sharedFire', cam='med', v='after', text="When the dust settles, the lion is gone. The boy is fine. Your arm is broken in three places."),
+ dict(who='AMA', set='sharedFire', cam='close', v='after', text="You saved my son."),
+ dict(who='N', set='sharedFire', cam='push', v='after', text="And for weeks, they feed you, carry water for you, and sit with you while you heal."),
+ dict(who='N', set='caveHome', cam='med', fact='CARED FOR', text="Funny thing. That's exactly what your people did. One Neanderthal found in Iraq survived for years with a crushed arm, because someone kept caring for him."),
+ dict(who='ELDER', set='sharedFire', cam='close', v='after', text="He's not a stranger. He's family."),
+ dict(who='N', set='mixedFamily', cam='wide', text="Your daughter grows up between two worlds. Her children forget there were ever two."),
+ # ---- YEARS PASS ----
+ dict(who='N', set='mixedFamily', cam='med', text="Years pass. Your daughter learns their words faster than you ever did."),
+ dict(who='KID', set='mixedFamily', cam='close', text="Dad, you say it wrong. Again."),
+ dict(who='N', set='steppeHunt', cam='med', v='hunt', text="Ama's son grows up into their best hunter. And he hunts the way you taught him. Up close."),
+ dict(who='N', set='caveArt', cam='med', v='hand', text="And one day, very old, you walk back to the cave where your grandmother sleeps."),
+ dict(who='N', set='caveArt', cam='push', v='hand', text="Your handprint is still there. Next to it, a smaller one. Your daughter's."),
+ dict(who='YOU', set='caveArt', cam='close', v='hand', text="We were here."),
+ dict(who='N', set='mixedFamily', cam='med', fact='50,500 – 43,500 YEARS AGO', text="And this really happened. Our species and yours had children together, mostly between about fifty and forty-three thousand years ago."),
+ # ---- WISE LINE + TWIST ----
+ dict(who='N', set='mixedFamily', cam='push', text="So, you were the last Neanderthal. But being the last isn't the same as being the end."),
+ dict(who='N', set='lab', cam='wide', text="Forty thousand years later, a scientist named Svante Pääbo reads your people's DNA from ancient bones."),
+ dict(who='SCI', set='lab', cam='close', text="They didn't disappear. They're in us."),
+ dict(who='N', set='lab', cam='med', fact='NOBEL PRIZE 2022', text="It wins him the Nobel Prize."),
+ dict(who='N', set='worldDNA', cam='wide', fact='1–2%', text="If your family comes from outside Africa, around one to two percent of your DNA comes from people like you."),
+ dict(who='N', set='worldDNA', cam='push', text="Billions of people are walking around with a little piece of the last Neanderthal."),
+ dict(who='N', set='worldDNA', cam='top', text="Some of those genes still shape our immune systems today."),
+ dict(who='N', set='worldDNA', cam='wide', text="One of them is even linked to how sick some people got with COVID."),
+ # ---- SEQUEL HOOK ----
+ dict(who='N', set='hillsNight', cam='wide', v='fires0', text="But here's the thing. You weren't the only other human out there."),
+ dict(who='N', set='hillsNight', cam='push', v='fires0', text="Far to the east, in the mountains of Asia, another kind of human was still watching the snow fall."),
+ # ---- CTA ----
+ dict(who='N', set='mixedFamily', cam='wide', text="So, what would you have done as the last Neanderthal? Tell us in the comments."),
+ dict(who='N', set='mixedFamily', cam='push', text="And if you'd have jumped in front of that lion too, hit like and subscribe for more what ifs."),
+]

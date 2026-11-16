@@ -1,0 +1,87 @@
+import React from 'react';
+import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig, interpolate} from 'remotion';
+import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
+import {loadFont as loadMont} from '@remotion/google-fonts/Montserrat';
+import TL from './timeline.json';
+import {SETS} from './sets';
+
+const {fontFamily: ANTON} = loadAnton();
+const {fontFamily: MONT} = loadMont('normal', {weights: ['900']});
+const FPS = 24;
+const POP = [0.92, 1.04, 1.01, 1.0];
+const popAt = (f: number) => (f < 0 ? 0 : f < POP.length ? POP[f] : 1);
+const outline = (px: number) => ({WebkitTextStroke: `${px}px #000`, paintOrder: 'stroke fill' as const});
+
+const Captions: React.FC = () => {
+  const frame = useCurrentFrame(); const T = frame / FPS;
+  const cue = TL.cues.find((c) => T >= c.s - 0.02 && T < c.e + 0.08);
+  if (!cue) return null;
+  const words = TL.words.slice(cue.w0, cue.w0 + cue.n);
+  let active = -1; words.forEach((w, i) => {if (T >= w.s - 0.02) active = i;});
+  const sc = popAt(frame - Math.round(cue.s * FPS));
+  const dialogue = cue.who !== 'N';
+  return (
+    <div style={{position: 'absolute', left: 0, right: 0, bottom: 70, display: 'flex', justifyContent: 'center'}}>
+      <div style={{maxWidth: 1500, textAlign: 'center', transform: `scale(${sc})`, fontFamily: ANTON, fontSize: 78, lineHeight: 1.08, letterSpacing: 1,
+        textShadow: '4px 4px 0 rgba(0,0,0,.55)', fontStyle: dialogue ? 'italic' : 'normal', ...outline(7)}}>
+        {words.map((w, i) => <span key={i} style={{color: i === active ? '#ffb02e' : dialogue ? '#cfe6ff' : '#fff6e6'}}>{w.w} </span>)}
+      </div>
+    </div>
+  );
+};
+
+const Facts: React.FC = () => {
+  const frame = useCurrentFrame(); const T = frame / FPS;
+  const f = TL.facts.find((x) => T >= x.s && T < x.e);
+  if (!f) return null;
+  const k = frame - Math.round(f.s * FPS);
+  const sc = k < 6 ? [0.6, 0.9, 1.12, 1.05, 1.0, 1.0][k] : 1;
+  const op = Math.min(1, (f.e - T) / 0.25);
+  return (
+    <div style={{position: 'absolute', left: 0, right: 0, top: 110, display: 'flex', justifyContent: 'center', opacity: op}}>
+      <div style={{fontFamily: MONT, fontWeight: 900, fontSize: f.t.length > 14 ? 92 : 120, color: '#ffd21f', transform: `scale(${sc})`, letterSpacing: -1,
+        filter: 'drop-shadow(0 6px 0 rgba(0,0,0,.55))', WebkitTextStroke: '4px #0b0612', paintOrder: 'stroke fill'}}>{f.t}</div>
+    </div>
+  );
+};
+
+const Opening: React.FC = () => {
+  const frame = useCurrentFrame();
+  const op = interpolate(frame, [0, 6, 150, 170], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{position: 'absolute', left: 70, top: 60, opacity: op, display: 'flex', gap: 22}}>
+      <div style={{width: 8, height: 150, background: '#fff'}} />
+      <div style={{fontFamily: MONT, fontWeight: 900, color: '#fff', lineHeight: 1.0, filter: 'drop-shadow(0 4px 0 rgba(0,0,0,.6))'}}>
+        <div style={{fontSize: 58}}>WHAT IF YOU WERE</div>
+        <div style={{fontSize: 82, color: '#ffd21f'}}>THE LAST NEANDERTHAL?</div>
+      </div>
+    </div>
+  );
+};
+
+const Shot: React.FC<{set: string; dur: number; k: number; who: string; cam: string; v?: string}> = ({set, dur, k, who, cam, v}) => {
+  const frame = useCurrentFrame(); const {fps} = useVideoConfig();
+  const S = SETS[set];
+  return <S t={frame / fps} d={dur} k={k} who={who} cam={cam} v={v} />;
+};
+
+export const Film07: React.FC = () => {
+  const {fps} = useVideoConfig();
+  return (
+    <AbsoluteFill style={{background: '#000'}}>
+      {TL.lines.map((l) => {
+        const from = Math.round(l.s * fps), dur = Math.max(1, Math.round(l.e * fps) - from);
+        return (
+          <Sequence key={l.i} from={from} durationInFrames={dur}>
+            <Shot set={l.set} dur={dur / fps} k={l.k} who={l.who} cam={l.cam} v={(l as any).v} />
+          </Sequence>
+        );
+      })}
+      <Facts />
+      <Opening />
+      <Captions />
+      <Audio src={staticFile('v07/mix.wav')} />
+    </AbsoluteFill>
+  );
+};
+export const FILM07_FRAMES = Math.round(TL.total * FPS);
