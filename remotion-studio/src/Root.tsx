@@ -6,6 +6,7 @@ import {ThumbA, ThumbB} from './v01/Thumb';
 import {IQ_A, IQ_B, H1280_C, NEA_A, NEA_B, NEA_C, NEA_D, NEA_E, NEA_F} from './thumbs/IfStyle';
 import {Film07, FILM07_FRAMES} from './v07/Film';
 import {Woke50k} from './thumbs/Triptych';
+import {Film04, FILM04_FRAMES} from './v04/Film';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -17,6 +18,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="T-IQ-B" component={IQ_B} durationInFrames={1} fps={24} width={1280} height={720} />
     <Composition id="T-1280-C" component={H1280_C} durationInFrames={1} fps={24} width={1280} height={720} />
     <Composition id="V07-Neanderthal" component={Film07} durationInFrames={FILM07_FRAMES} fps={24} width={1920} height={1080} />
+    <Composition id="V04-Woke50K" component={Film04} durationInFrames={FILM04_FRAMES} fps={24} width={1920} height={1080} />
     <Composition id="T-NEA-A" component={NEA_A} durationInFrames={1} fps={24} width={1280} height={720} />
     <Composition id="T-NEA-B" component={NEA_B} durationInFrames={1} fps={24} width={1280} height={720} />
     <Composition id="T-NEA-C" component={NEA_C} durationInFrames={1} fps={24} width={1280} height={720} />
