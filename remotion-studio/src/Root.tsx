@@ -6,6 +6,7 @@ import {ThumbA, ThumbB} from './v01/Thumb';
 import {IQ_A, IQ_B, H1280_C, NEA_A, NEA_B, NEA_C, NEA_D, NEA_E, NEA_F, WOKE_N_A, DAYS30_A, BACK_A, HALF_A, AFRICA_A} from './thumbs/IfStyle';
 import {Film07, FILM07_FRAMES} from './v07/Film';
 import {Woke50k, IceAges} from './thumbs/Triptych';
+import {B_LAST, B_50K, B_30D, B_BACK, B_HALF, B_AFRICA, B_ICE} from './thumbs/Bright';
 import {Film04, FILM04_FRAMES} from './v04/Film';
 import {Film09, FILM09_FRAMES} from './v09/Film';
 import {Film10, FILM10_FRAMES} from './v10/Film';
@@ -44,5 +45,12 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="T-ICE-A" component={IceAges} durationInFrames={1} fps={24} width={1280} height={720} />
     <Composition id="T-NEA-E" component={NEA_E} durationInFrames={1} fps={24} width={1280} height={720} />
     <Composition id="T-50K" component={Woke50k} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-LAST" component={B_LAST} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-50K" component={B_50K} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-30D" component={B_30D} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-BACK" component={B_BACK} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-HALF" component={B_HALF} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-AFRICA" component={B_AFRICA} durationInFrames={1} fps={24} width={1280} height={720} />
+    <Composition id="TB-ICE" component={B_ICE} durationInFrames={1} fps={24} width={1280} height={720} />
   </>
 );
