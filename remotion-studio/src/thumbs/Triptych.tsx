@@ -97,3 +97,28 @@ export const Woke50k: React.FC = () => (
     <div style={{position: 'absolute', left: 852, top: 0, width: 4, height: PH, background: '#0b0612'}} />
   </AbsoluteFill>
 );
+
+/* EVERY ICE AGE · three eras graded by how long you'd last */
+const IcePanel: React.FC<{x: number; bg: string; era: string; time: string; tc: string; ground: string; mood: 'gasp' | 'cold' | 'smug'; extra?: React.ReactNode}> = ({x, bg, era, time, tc, ground, mood, extra}) => (
+  <Panel x={x} bg={bg}>
+    <ThreeCanvas width={PW} height={PH} camera={{fov: 40, position: [0, 2, 5]}}>
+      <AmberLights key1="#fff0e0" rim={2.2} fill={1.0} ambI={0.7} />
+      <Ground color={ground} size={30} />
+      {extra}
+      <Person {...HOODIE} pos={[0, 0, 0]} t={0} look={[0, mood === 'smug' ? 0.05 : 0]} mouth={mood === 'smug' ? 'smile' : 'o'} brows={mood !== 'smug'} smug={mood === 'smug'} glint={mood === 'smug'} lean={mood === 'gasp' ? 0.25 : 0} armLFwd={mood === 'cold' ? 1.0 : 0} armRFwd={mood === 'cold' ? 1.0 : 0} outline={mood === 'smug' ? '#ffd27a' : undefined} />
+      <Cam p={0} from={[0, 1.6, 4.4]} to={[0, 1.6, 4.4]} look={[0, 1.25, 0]} fov={40} />
+    </ThreeCanvas>
+    <div style={{position: 'absolute', left: 0, right: 0, top: 26, textAlign: 'center', fontFamily: MONT, fontWeight: 900, fontSize: 30, color: '#fff', WebkitTextStroke: '2px #0b0612', paintOrder: 'stroke fill', filter: 'drop-shadow(0 4px 0 rgba(0,0,0,.6))'}}>{era}</div>
+    <div style={{position: 'absolute', left: 0, right: 0, bottom: 34, textAlign: 'center', fontFamily: MONT, fontWeight: 900, fontSize: time.length > 8 ? 56 : 70, color: tc, WebkitTextStroke: '3px #0b0612', paintOrder: 'stroke fill', filter: 'drop-shadow(0 6px 0 rgba(0,0,0,.6))', lineHeight: 1}}>{time}</div>
+  </Panel>
+);
+export const IceAges: React.FC = () => (
+  <AbsoluteFill style={{background: '#000'}}>
+    <IcePanel x={0} bg="linear-gradient(#b05a3a, #f0c890)" era="2.4 BILLION YRS AGO" time="1 MINUTE" tc="#ff4a3a" ground="#6a4a3a" mood="gasp" />
+    <IcePanel x={427} bg="linear-gradient(#8aa0c8, #f4f6fa)" era="700 MILLION YRS AGO" time="3 DAYS" tc="#ffb02e" ground="#eef4ff" mood="cold" />
+    <IcePanel x={854} bg="linear-gradient(#ff9a6a, #c0504a 60%, #4a1e2e)" era="20,000 YRS AGO" time="A LIFETIME" tc="#7aff7a" ground="#d8dce8" mood="smug"
+      extra={<><Fire pos={[1.0, 0, 0.6]} t={0.4} light={6} s={0.7} /><Crowd positions={[[-1.4, 0, -1.2], [1.6, 0, -1.6], [-0.6, 0, -2.2]]} visible={3} color="#5a3a2a" s={0.9} /></>} />
+    <div style={{position: 'absolute', left: 425, top: 0, width: 4, height: PH, background: '#0b0612'}} />
+    <div style={{position: 'absolute', left: 852, top: 0, width: 4, height: PH, background: '#0b0612'}} />
+  </AbsoluteFill>
+);

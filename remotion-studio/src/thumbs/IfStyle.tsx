@@ -287,3 +287,123 @@ export const NEA_F: React.FC<{armA?: number; armB?: number}> = ({armA = 1.5, arm
     <Headline l1="I DIDN'T" l2="MOVE." size={140} />
   </AbsoluteFill>
 );
+
+/* W · "What If You Woke Up as a Neanderthal?": Face ID fails = you're not you anymore */
+export const WOKE_N_A: React.FC = () => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 70% 40%, #ffd8a8 0%, #c88a6a 35%, #3a2a3a 80%)'}}>
+    <ThreeCanvas width={1280} height={720} camera={{fov: 34, position: [0, 2, 4]}}>
+      <AmberLights rimPos={[3, 3, -3]} rim={3.6} fill={1.0} key1="#ffd8b0" />
+      <directionalLight position={[-2, 3, 4]} intensity={1.2} color="#ffffff" />
+      <Person kind="neander" outfit="#f07a2a" trim="#b8561a" sleeve="#e06a20" pos={[1.15, 0, -0.5]} rotY={-0.3} t={0} look={[-0.6, 0.05]} smug glint outline="#ffd27a" armL={0.75} armLFwd={1.25} />
+      <Cam p={0} from={[0.55, 2.05, 2.5]} to={[0.55, 2.05, 2.5]} look={[0.35, 1.8, -1]} fov={40} />
+    </ThreeCanvas>
+    <RimGlow x={960} y={280} r={320} color="rgba(255,200,120,.35)" />
+    <div style={{position: 'absolute', left: 455, top: 300, width: 300, height: 420, borderRadius: 42, background: '#0e0e14', border: '6px solid #2a2a34',
+      transform: 'rotate(-8deg)', boxShadow: '0 0 80px rgba(255,90,74,.45), 0 14px 0 rgba(0,0,0,.5)', padding: 18, boxSizing: 'border-box'}}>
+      <div style={{background: 'linear-gradient(#1a2a4a, #0a1020)', borderRadius: 28, height: '100%', padding: '34px 16px', boxSizing: 'border-box', fontFamily: MONT, fontWeight: 900, textAlign: 'center'}}>
+        <svg width="130" height="130"><rect x="8" y="8" width="114" height="114" rx="26" fill="none" stroke="#ff5a4a" strokeWidth="9" /><circle cx="47" cy="52" r="7" fill="#ff5a4a" /><circle cx="83" cy="52" r="7" fill="#ff5a4a" /><path d="M42 96 q23 -18 46 0" stroke="#ff5a4a" strokeWidth="8" fill="none" /></svg>
+        <div style={{fontSize: 34, color: '#ff6a55', marginTop: 24, lineHeight: 1.05}}>FACE NOT<br />RECOGNISED</div>
+      </div>
+    </div>
+    <Pill text="100% NEANDERTHAL" x={830} y={636} />
+    <Headline l1="I WOKE UP" l2="LIKE THIS." size={118} />
+  </AbsoluteFill>
+);
+
+/* 30 DAYS · the red button everyone understands: press it and lose $1,000,000 */
+export const DAYS30_A: React.FC = () => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 30% 60%, #ff9a4a 0%, #8a3a2a 35%, #1a0e14 80%)'}}>
+    <ThreeCanvas width={1280} height={720} camera={{fov: 34, position: [0, 2, 4]}}>
+      <AmberLights rimPos={[-3, 3, -3]} rim={3.4} fill={0.9} key1="#ffb070" />
+      <pointLight position={[-1.2, 0.8, 1.5]} intensity={12} color="#ff9a4a" decay={1.5} />
+      <Fire pos={[-2.1, 0, -0.2]} t={0.4} light={0} s={0.9} />
+      <Person kind="modern" outfit="#f07a2a" sleeve="#e06a20" pos={[0.9, 0, -0.4]} rotY={-0.5} sit t={0} look={[-0.6, 0.0]} smug glint outline="#ffd27a" armL={0.5} armLFwd={1.35} />
+      <Cam p={0} from={[0.35, 1.55, 2.6]} to={[0.35, 1.55, 2.6]} look={[0.2, 1.25, -1]} fov={40} />
+    </ThreeCanvas>
+    <RimGlow x={900} y={330} r={300} color="rgba(255,170,90,.32)" />
+    <div style={{position: 'absolute', left: 430, top: 300, width: 330, height: 330, borderRadius: 60, background: '#14141c', border: '8px solid #2a2a36',
+      boxShadow: '0 0 90px rgba(255,60,60,.55), 0 14px 0 rgba(0,0,0,.5)', fontFamily: MONT, fontWeight: 900, textAlign: 'center', paddingTop: 22, boxSizing: 'border-box', transform: 'rotate(-6deg)'}}>
+      <div style={{fontSize: 46, color: '#ffd21f'}}>$1,000,000</div>
+      <div style={{margin: '18px auto 0', width: 170, height: 170, borderRadius: '50%', background: 'radial-gradient(circle at 40% 35%, #ff6a5a, #c01e1e)', boxShadow: '0 0 40px rgba(255,60,60,.8)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 40, color: '#fff'}}>QUIT</div>
+    </div>
+    <Pill text="DAY 29 / 30" x={845} y={632} />
+    <Headline l1="DON'T" l2="PRESS IT." size={132} />
+  </AbsoluteFill>
+);
+
+/* BROUGHT BACK · the museum "EXTINCT" placard, struck out: BORN 2026 */
+export const BACK_A: React.FC = () => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 65% 35%, #3a4a6a, #0b0c18 75%)'}}>
+    <ThreeCanvas width={1280} height={720} camera={{fov: 34, position: [0, 2, 4]}}>
+      <ambientLight intensity={0.4} color="#7a8ab0" />
+      <spotLight position={[1.1, 6, 2]} angle={0.45} penumbra={0.6} intensity={70} color="#fff0d0" decay={1.5} target-position={[1.1, 1, 0]} />
+      <directionalLight position={[3, 3, -3]} intensity={2.4} color="#9fd8ff" />
+      <Person kind="neander" outfit="#f07a2a" trim="#b8561a" sleeve="#e06a20" pos={[1.15, 0, -0.4]} rotY={-0.3} t={0} look={[-0.55, 0.05]} smug glint outline="#9fd8ff" armL={-0.15} armLFwd={0.3} />
+      <Cam p={0} from={[0.5, 2.0, 2.6]} to={[0.5, 2.0, 2.6]} look={[0.3, 1.75, -1]} fov={40} />
+    </ThreeCanvas>
+    <RimGlow x={950} y={290} r={320} color="rgba(120,200,255,.25)" />
+    <div style={{position: 'absolute', left: 300, top: 360, width: 440, padding: '20px 18px', background: '#e8e0cc', border: '5px solid #8a7a5a', borderRadius: 6,
+      fontFamily: MONT, fontWeight: 900, color: '#2a1e14', textAlign: 'center', boxShadow: '0 10px 0 rgba(0,0,0,.5)', transform: 'rotate(-5deg)'}}>
+      <div style={{fontSize: 24, letterSpacing: 1}}>HOMO NEANDERTHALENSIS</div>
+      <div style={{position: 'relative', fontSize: 64, color: '#7a6a5a', lineHeight: 1.15}}>EXTINCT
+        <div style={{position: 'absolute', left: 30, right: 30, top: '52%', height: 12, background: '#e5322d', transform: 'rotate(-6deg)', borderRadius: 6}} /></div>
+      <div style={{fontSize: 46, color: '#e5322d', lineHeight: 1.05}}>BORN 2026</div>
+    </div>
+    <Headline l1="I'M" l2="BACK." size={150} />
+  </AbsoluteFill>
+);
+
+/* 50% · the ancestry pie chart everyone has seen, split exactly in half */
+export const HALF_A: React.FC = () => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 70% 35%, #4a2a5a, #0c0814 75%)'}}>
+    <ThreeCanvas width={1280} height={720} camera={{fov: 34, position: [0, 2, 4]}}>
+      <AmberLights rimPos={[3, 3, -3]} rim={3.4} fill={0.8} key1="#ffb460" />
+      <Person kind="modern" outfit="#f07a2a" sleeve="#e06a20" pos={[1.2, 0, -0.6]} rotY={-0.35} t={0} look={[-0.6, 0.0]} smug glint outline="#ffb45a" armL={0.7} armLFwd={1.2} />
+      <Person kind="neander" outfit="#4a6a8a" trim="#2a4a6a" sleeve="#3a5a7a" pos={[2.4, 0, -1.6]} rotY={-0.5} t={0} look={[-0.5, 0]} mouth="smile" outline="#9fd8ff" />
+      <Cam p={0} from={[0.6, 2.0, 2.4]} to={[0.6, 2.0, 2.4]} look={[0.4, 1.75, -1]} fov={42} />
+    </ThreeCanvas>
+    <RimGlow x={950} y={300} r={300} color="rgba(255,160,80,.28)" />
+    <div style={{position: 'absolute', left: 430, top: 300, width: 320, height: 410, borderRadius: 40, background: '#0e0e14', border: '6px solid #2a2a34', transform: 'rotate(-7deg)',
+      boxShadow: '0 0 70px rgba(120,200,255,.35), 0 14px 0 rgba(0,0,0,.5)', padding: 18, boxSizing: 'border-box'}}>
+      <div style={{background: '#f4f2ee', borderRadius: 26, height: '100%', padding: '22px 14px', boxSizing: 'border-box', fontFamily: MONT, fontWeight: 900, textAlign: 'center'}}>
+        <div style={{fontSize: 17, color: '#6a6a7a', letterSpacing: 1}}>YOUR DNA RESULTS</div>
+        <div style={{margin: '16px auto 0', width: 170, height: 170, borderRadius: '50%', background: 'conic-gradient(from 180deg, #e5322d 0 50%, #3a7ad0 50% 100%)', border: '5px solid #fff', boxShadow: '0 4px 0 rgba(0,0,0,.2)'}} />
+        <div style={{display: 'flex', justifyContent: 'space-around', marginTop: 16, fontSize: 16, lineHeight: 1.15, gap: 8}}>
+          <div style={{color: '#e5322d'}}>50%<br />NEANDERTHAL</div><div style={{color: '#3a7ad0'}}>50%<br />HUMAN</div>
+        </div>
+      </div>
+    </div>
+    <Headline l1="HALF" l2="CAVEMAN." size={140} />
+  </AbsoluteFill>
+);
+
+/* NEVER LEFT AFRICA · the world map everyone knows, with only Africa full of people */
+const AFR = 'M610 250 L700 238 L760 262 L790 300 L812 312 L798 352 L770 392 L760 440 L736 480 L706 520 L676 528 L660 490 L648 440 L626 400 L596 372 L580 330 L590 286 Z';
+export const AFRICA_A: React.FC = () => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 55% 55%, #1a2a4a, #070a16 75%)'}}>
+    <svg width={1280} height={720} style={{position: 'absolute', left: 0, top: 0}}>
+      <rect x="0" y="0" width="1280" height="720" fill="#0e2240" opacity="0.5" />
+      {/* Europe / Asia / Americas / Australia as rough silhouettes */}
+      <path d="M590 150 L700 120 L760 140 L740 190 L700 220 L640 228 L600 210 Z" fill="#4a5060" />
+      <path d="M760 120 L960 100 L1100 140 L1150 210 L1100 270 L1000 300 L900 330 L830 300 L800 240 L770 180 Z" fill="#4a5060" />
+      <path d="M150 140 L330 120 L390 180 L360 250 L300 300 L260 320 L220 280 L170 230 Z" fill="#3a404c" />
+      <path d="M300 340 L360 350 L390 400 L370 470 L340 560 L310 600 L290 540 L280 450 Z" fill="#3a404c" />
+      <path d="M1000 470 L1100 450 L1160 490 L1140 540 L1060 560 L1010 530 Z" fill="#3a404c" />
+      <path d={AFR} fill="#ff9a3a" stroke="#ffd27a" strokeWidth="5" style={{filter: 'drop-shadow(0 0 24px #ff9a3a)'}} />
+      {Array.from({length: 46}).map((_, i) => {const a = Math.sin(i * 12.9898) * 43758.5; const b = Math.sin(i * 78.233) * 12345.6; const x = 620 + ((a - Math.floor(a)) * 160); const y = 270 + ((b - Math.floor(b)) * 230); return <circle key={i} cx={x} cy={y} r="5" fill="#2a1408" />;})}
+      <g fontFamily="Montserrat" fontWeight="900" fontSize="26" fill="#cfd6e4" stroke="#0b0612" strokeWidth="4" paintOrder="stroke">
+        <text x="600" y="178">NEANDERTHALS</text>
+        <text x="880" y="210">DENISOVANS</text>
+        <text x="225" y="470">NO HUMANS</text>
+        
+      </g>
+    </svg>
+    <ThreeCanvas width={1280} height={720} camera={{fov: 34, position: [0, 2, 4]}} style={{position: 'absolute', left: 0, top: 0}}>
+      <AmberLights rimPos={[-3, 3, -3]} rim={3.6} fill={0.9} key1="#ffb070" />
+      <Person kind="adult" outfit="#d0742e" trim="#7a3a14" pos={[2.15, -0.9, -0.2]} rotY={-0.35} t={0} look={[-0.6, 0.05]} smug glint outline="#ffd27a" prop="spear" armRFwd={0.3} />
+      <Cam p={0} from={[0.5, 1.4, 3.6]} to={[0.5, 1.4, 3.6]} look={[0.5, 0.95, -1]} fov={40} />
+    </ThreeCanvas>
+    <Headline l1="WE" l2="STAYED." size={140} />
+  </AbsoluteFill>
+);
